@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: us-east-1
   EB_APP_NAME: mt-java-application
-  EB_ENV_NAME: MMt-java-application-env 
+  EB_ENV_NAME: Mt-java-application-env 
   JAVA_VERSION: '17'
 
 jobs:
