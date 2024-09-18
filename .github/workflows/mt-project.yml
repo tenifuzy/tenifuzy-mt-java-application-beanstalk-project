@@ -2,7 +2,8 @@ name: Deploy Java Spring Boot to AWS Elastic Beanstalk
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 env:
   AWS_REGION: us-east-1
@@ -37,7 +38,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
-     run: |
+    - name: Generate deployment package
+      run: |
         mkdir -p deployment
         cp target/springboot-example.jar deployment/
         cd deployment && zip -r deploy.zip .
@@ -51,5 +53,6 @@ jobs:
         environment_name: Mt-java-application-env-1
         region: us-east-1
         version_label: ${{ github.sha }}
-    deployment_package: target/springboot-example.jar
-    use_existing_version_if_available: true
+        deployment_package: deployment/deploy.zip
+        use_existing_version_if_available: true
+        wait_for_deployment: true
