@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: us-east-1
   EB_APP_NAME: mt-java-application
-  EB_ENV_NAME: Mt-java-application-env-1
+  EB_ENV_NAME: MMt-java-application-env 
   JAVA_VERSION: '17'
 
 jobs:
@@ -50,7 +50,7 @@ jobs:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: mt-java-application
-        environment_name: Mt-java-application-env-1
+        environment_name: Mt-java-application-env 
         region: us-east-1
         version_label: ${{ github.sha }}
         deployment_package: deployment/deploy.zip
