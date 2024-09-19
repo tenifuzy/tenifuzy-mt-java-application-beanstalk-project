@@ -55,11 +55,21 @@ Commit and push the changes to your GitHub repository:
 
 ## Step 5: Verify Deployment
 
-Once the commit and push is successfully, navigate to your Github dashboard.
+Once the commit and push is successful;
+1. navigate to your Github dashboard to verify.
 
+![Screenshot 2024-09-19 060802](https://github.com/user-attachments/assets/002daa54-cae7-45dd-a5ef-ffe9708a1e91)
 
-Verify that the new version of your application is running in your environment.
-Access your application via the provided URL.
+![Screenshot 2024-09-19 060841](https://github.com/user-attachments/assets/d0ee0215-18d7-4f00-8a1f-fa262404e81e)
+
+2. Verify that the new version of your application is running in your environment.
+![Screenshot 2024-09-19 061301](https://github.com/user-attachments/assets/37eabe51-d09d-4570-8e38-975f0ec5b985)
+
+![Screenshot 2024-09-19 061439](https://github.com/user-attachments/assets/00834cad-5ce8-4922-8de6-1b80b10065d8)
+
+3. Access your application via the provided URL.
+
+![Screenshot 2024-09-19 061927](https://github.com/user-attachments/assets/3f777c54-8695-4c29-a743-edb91b427b6d)
 
 
 
